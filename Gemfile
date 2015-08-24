@@ -105,6 +105,7 @@ group :production do
   # requires memcached 1.4+
   # see https://github.com/mperham/dalli
   gem 'dalli', '~> 2.7.2'
+  gem 'rails_12factor'
 end
 
 gem 'sprockets',        '~> 2.12.3'
