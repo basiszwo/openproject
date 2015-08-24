@@ -108,6 +108,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+# required for Heroku seed data
+# better use heroku group
+gem 'faker'
+
 gem 'sprockets',        '~> 2.12.3'
 gem 'non-stupid-digest-assets'
 gem 'sass-rails',       '~> 5.0.3'
@@ -180,7 +184,6 @@ end
 group :development do
   gem 'letter_opener', '~> 1.3.0'
   gem 'thin'
-  gem 'faker'
   gem 'quiet_assets'
   gem 'rubocop', '~> 0.32'
 end
